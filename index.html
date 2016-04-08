@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app='Pokemon'>
+    <head>
+        <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
+        <title>Pokemon API Practice</title>
+    </head>
+
+
+    <body ng-controller='Controller'>
+
+    <div>
+        <h3 style="font-size: 35px">POKEMON INDEX</h3>
+        <form ng-submit="displayPokemon()">
+        <input ng-model="num" placeholder="Enter Pokemon Number"></input>
+    </form>
+         <hr>
+
+         <div class = "stats" ng-show="response">
+            <p style="font-size: 30px">{{response.name.toUpperCase()}}</p>
+            <p>Base Experience: {{response.base_experience}}</p>
+            <p>Height: {{response.height}}</p>
+            <p>Weight: {{response.weight}}</p>
+            <p>Attacks: {{response.moves[0].move.name}}, {{response.moves[1].move.name}}, {{response.moves[4].move.name}}</p>
+            <p>Passive Abilities: {{response.abilities[0].ability.name}}, {{response.abilities[1].ability.name}}</p>
+            <img src ='{{response.sprites.front_default}}'>
+            <img src='{{response.sprites.back_default}}'>
+         <hr>
+      </div>
+
+    </div>
+
+
+        <!--Angular Library-->
+        <script src ='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.js'></script>
+        <!--All JS files-->
+        <script src ='app.js'></script>
+        <script src ='Controller.js'></script>
+        <script src ='service.js'></script>
+    </body>
+</html>

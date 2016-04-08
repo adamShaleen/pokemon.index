@@ -1,0 +1,24 @@
+body {
+    margin: auto;
+    text-align: center;
+}
+
+hr {
+    margin: auto;
+    width: 25%;
+}
+
+
+img {
+    margin: auto;
+    width: 128px;
+    height: 128px;
+}
+
+input {
+    margin-bottom: 1%;
+}
+
+.stats {
+
+}
