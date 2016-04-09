@@ -12,9 +12,9 @@
         <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/English_Pok%C3%A9mon_logo.svg/1000px-English_Pok%C3%A9mon_logo.svg.png"/>
         <h3 style="font-size: 4em">CHARACTER INDEX</h3>
         <form ng-submit="displayPokemon()">
-        <input ng-model="num" placeholder="Enter Number"></input>
+        <input ng-model="num" placeholder="Enter Number 1-711"></input>
     </form>
-    <img ng-hide="response" class="pokeball" src="http://img3.wikia.nocookie.net/__cb20130901024704/clubpenguin/images/4/4c/Pokeball.png"/>
+    <!-- <img ng-hide="response" class="pokeball" src="http://img3.wikia.nocookie.net/__cb20130901024704/clubpenguin/images/4/4c/Pokeball.png"/> -->
          <!-- <hr ng-show="response"> -->
 
          <div class = "stats" ng-show="response">
@@ -29,8 +29,8 @@
          <!-- <hr ng-show="response"> -->
       </div>
       <br>
-      <!-- <img ng-show="response" class="static-character" src="http://vignette2.wikia.nocookie.net/pokemon/images/8/88/Xyash.png/revision/latest?cb=20131209060527"/> -->
-      <!-- <hr ng-show="response"> -->
+      <img ng-hide="response" class="static-character" src="http://vignette2.wikia.nocookie.net/pokemon/images/8/88/Xyash.png/revision/latest?cb=20131209060527"/>
+      <hr ng-show="response">
     <div ng-show="response" class="published">
         <hr ng-show="response">
       <p>Developed for design purposes only. team.shaleen. 2016</p>

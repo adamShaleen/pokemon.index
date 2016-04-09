@@ -28,9 +28,10 @@ img {
 }
 
 .static-character {
-    width: 40%;
+    width: 50%;
     height: 40%;
     margin-bottom: 2%;
+    margin-top: 10%;
 }
 
 input {
