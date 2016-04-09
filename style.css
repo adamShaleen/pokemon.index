@@ -6,7 +6,6 @@ body {
 .full_container {
     /*margin-left: 30%;
     margin-right: 30%;*/
-    background: rgba(29, 27, 4, 0.19);
 }
 
 .logo {
@@ -39,9 +38,16 @@ input {
     padding: 2%;
     font-size: 3em;
     text-align: center;
+    border: 1px solid black;
+}
+
+.pokeball {
+    width: 50%;
+    padding-top: 20%;
+
 }
 
 .published {
-    font-size: 1.5em;
+    font-size: .75em;
     padding-bottom: 2%;
 }
