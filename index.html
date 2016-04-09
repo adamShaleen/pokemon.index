@@ -1,32 +1,38 @@
 <!DOCTYPE html>
 <html ng-app='Pokemon'>
     <head>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:500' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
-        <title>Pokemon API Practice</title>
+        <title>Pokemon Character Index</title>
     </head>
-
 
     <body ng-controller='Controller'>
 
-    <div>
-        <h3 style="font-size: 35px">POKEMON INDEX</h3>
+    <div class="full_container">
+        <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/English_Pok%C3%A9mon_logo.svg/1000px-English_Pok%C3%A9mon_logo.svg.png"/>
+        <h3 style="font-size: 4em">CHARACTER INDEX</h3>
         <form ng-submit="displayPokemon()">
-        <input ng-model="num" placeholder="Enter Pokemon Number"></input>
+        <input ng-model="num" placeholder="Enter Number"></input>
     </form>
          <hr>
 
          <div class = "stats" ng-show="response">
-            <p style="font-size: 30px">{{response.name.toUpperCase()}}</p>
-            <p>Base Experience: {{response.base_experience}}</p>
-            <p>Height: {{response.height}}</p>
-            <p>Weight: {{response.weight}}</p>
-            <p>Attacks: {{response.moves[0].move.name}}, {{response.moves[1].move.name}}, {{response.moves[4].move.name}}</p>
-            <p>Passive Abilities: {{response.abilities[0].ability.name}}, {{response.abilities[1].ability.name}}</p>
+            <p style="font-size: 3em">{{response.name.toUpperCase()}}</p>
+            <p style="font-size: 2em">Base Experience: {{response.base_experience}}</p>
+            <p style="font-size: 2em">Height: {{response.height}}</p>
+            <p style="font-size: 2em">Weight: {{response.weight}}</p>
+            <p style="font-size: 2em">Attacks: {{response.moves[0].move.name}}, {{response.moves[1].move.name}}, {{response.moves[4].move.name}}.</p>
+            <p style="font-size: 2em">Passive Abilities: {{response.abilities[0].ability.name}}, {{response.abilities[1].ability.name}}.</p>
             <img src ='{{response.sprites.front_default}}'>
             <img src='{{response.sprites.back_default}}'>
          <hr>
       </div>
-
+      <br>
+      <img class="static-character" src="http://vignette2.wikia.nocookie.net/pokemon/images/8/88/Xyash.png/revision/latest?cb=20131209060527"/>
+      <hr>
+    <div class="published">
+      <p>Developed for design purposes only. team.shaleen. 2016</p>
+  </div>
     </div>
 
 

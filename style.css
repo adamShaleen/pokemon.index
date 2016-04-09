@@ -1,24 +1,47 @@
 body {
-    margin: auto;
     text-align: center;
+    font-family: 'roboto';
+}
+
+.full_container {
+    /*margin-left: 30%;
+    margin-right: 30%;*/
+    background: rgba(29, 27, 4, 0.19);
+}
+
+.logo {
+    width: 90%;
+    height: 30%;
+    margin-top: 2%;
+    margin-bottom: -7%;
 }
 
 hr {
     margin: auto;
-    width: 25%;
+    width: 50%;
 }
 
 
 img {
     margin: auto;
-    width: 128px;
-    height: 128px;
+    width: 40%;
+    height: 40%;
+}
+
+.static-character {
+    width: 40%;
+    height: 40%;
+    margin-bottom: 2%;
 }
 
 input {
-    margin-bottom: 1%;
+    margin-bottom: 2%;
+    padding: 2%;
+    font-size: 3em;
+    text-align: center;
 }
 
-.stats {
-
+.published {
+    font-size: 1.5em;
+    padding-bottom: 2%;
 }
