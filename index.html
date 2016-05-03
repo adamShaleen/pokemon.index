@@ -3,20 +3,19 @@
     <head>
         <link href='https://fonts.googleapis.com/css?family=Roboto:500' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Pokemon Character Index</title>
     </head>
 
     <body ng-controller='Controller'>
 
+    <div class="flex">
     <div class="full_container">
         <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/English_Pok%C3%A9mon_logo.svg/1000px-English_Pok%C3%A9mon_logo.svg.png"/>
         <h3 style="font-size: 4em">CHARACTER INDEX</h3>
         <form ng-submit="displayPokemon()">
         <input ng-model="num" placeholder="Enter Number 1-711"></input>
     </form>
-    <!-- <img ng-hide="response" class="pokeball" src="http://img3.wikia.nocookie.net/__cb20130901024704/clubpenguin/images/4/4c/Pokeball.png"/> -->
-         <!-- <hr ng-show="response"> -->
-
          <div class = "stats" ng-show="response">
             <p style="font-size: 3em">{{response.name.toUpperCase()}}</p>
             <p style="font-size: 2em">Base Experience: {{response.base_experience}}</p>
@@ -26,17 +25,15 @@
             <p style="font-size: 2em">Passive Abilities: {{response.abilities[0].ability.name}}, {{response.abilities[1].ability.name}}.</p>
             <img src ='{{response.sprites.front_default}}'>
             <img src='{{response.sprites.back_default}}'>
-         <!-- <hr ng-show="response"> -->
       </div>
       <br>
       <img ng-hide="response" class="static-character" src="http://vignette2.wikia.nocookie.net/pokemon/images/8/88/Xyash.png/revision/latest?cb=20131209060527"/>
       <hr ng-show="response">
     <div ng-show="response" class="published">
-        <hr ng-show="response">
       <p>Developed for design purposes only. team.shaleen. 2016</p>
   </div>
     </div>
-
+</div>
 
         <!--Angular Library-->
         <script src ='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.js'></script>

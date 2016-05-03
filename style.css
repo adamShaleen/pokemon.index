@@ -1,11 +1,8 @@
 body {
     text-align: center;
     font-family: 'roboto';
-}
-
-.full_container {
-    /*margin-left: 30%;
-    margin-right: 30%;*/
+    margin: 0px;
+    padding: 0px;
 }
 
 .logo {
@@ -16,13 +13,11 @@ body {
 }
 
 hr {
-    margin: auto;
     width: 80%;
 }
 
 
 img {
-    margin: auto;
     width: 40%;
     height: 40%;
 }
@@ -35,9 +30,10 @@ img {
 }
 
 input {
+    width: 80%;
     margin-bottom: 2%;
     padding: 2%;
-    font-size: 3em;
+    font-size: 2em;
     text-align: center;
     border: 1px solid black;
 }
