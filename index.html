@@ -9,31 +9,33 @@
 
     <body ng-controller='Controller'>
 
-    <div class="flex">
-    <div class="full_container">
-        <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/English_Pok%C3%A9mon_logo.svg/1000px-English_Pok%C3%A9mon_logo.svg.png"/>
-        <h3 style="font-size: 4em">CHARACTER INDEX</h3>
+        <img ng-click="toggle()" class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/English_Pok%C3%A9mon_logo.svg/1000px-English_Pok%C3%A9mon_logo.svg.png"/>
+
+        <p id="title_text">CHARACTER INDEX</p>
+
         <form ng-submit="displayPokemon()">
-        <input ng-model="num" placeholder="Enter Number 1-711"></input>
-    </form>
-         <div class = "stats" ng-show="response">
-            <p style="font-size: 3em">{{response.name.toUpperCase()}}</p>
-            <p style="font-size: 2em">Base Experience: {{response.base_experience}}</p>
-            <p style="font-size: 2em">Height: {{response.height}}</p>
-            <p style="font-size: 2em">Weight: {{response.weight}}</p>
-            <p style="font-size: 2em">Attacks: {{response.moves[0].move.name}}, {{response.moves[1].move.name}}, {{response.moves[4].move.name}}.</p>
-            <p style="font-size: 2em">Passive Abilities: {{response.abilities[0].ability.name}}, {{response.abilities[1].ability.name}}.</p>
-            <img src ='{{response.sprites.front_default}}'>
-            <img src='{{response.sprites.back_default}}'>
+            <input id="input" ng-model="num" placeholder="Enter Number 1-720"></input>
+        </form>
+
+         <div class="stats" ng-show="response">
+            <p id="pokemon_name">{{response.name.toUpperCase()}}</p>
+            <p class="stats">Base Experience: {{response.base_experience}}</p>
+            <p class="stats">Height: {{response.height}}</p>
+            <p class="stats">Weight: {{response.weight}}</p>
+            <p class="stats">Attacks: {{response.moves[0].move.name}}, {{response.moves[1].move.name}}, {{response.moves[4].move.name}}.</p>
+            <p class="stats">Passive Abilities: {{response.abilities[0].ability.name}}, {{response.abilities[1].ability.name}}.</p>
       </div>
+
+      <img class="pokemon_image" src ='{{response.sprites.front_default}}'>
+      <img class="pokemon_image" src='{{response.sprites.back_default}}'>
+
       <br>
+
       <img ng-hide="response" class="static-character" src="http://vignette2.wikia.nocookie.net/pokemon/images/8/88/Xyash.png/revision/latest?cb=20131209060527"/>
-      <hr ng-show="response">
-    <div ng-show="response" class="published">
-      <p>Developed for design purposes only. team.shaleen. 2016</p>
-  </div>
-    </div>
-</div>
+
+      <div class="published">
+          <p>Developed for design purposes only&nbsp;|&nbsp;team.shaleen<br>&copy;2016</p>
+      </div>
 
         <!--Angular Library-->
         <script src ='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.js'></script>

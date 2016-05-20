@@ -1,50 +1,86 @@
 body {
     text-align: center;
-    font-family: 'roboto';
+    font-family: Serif;
     margin: 0px;
     padding: 0px;
 }
 
 .logo {
     width: 90%;
-    height: 30%;
-    margin-top: 2%;
-    margin-bottom: -7%;
+    margin-top: 10px;
 }
 
-hr {
-    width: 80%;
+#title_text {
+    text-align: center;
+    font-size: 26px;
 }
 
-
-img {
-    width: 40%;
-    height: 40%;
+#input {
+    margin: auto;
+    border: 1px solid;
+    text-align: center;
 }
 
 .static-character {
-    width: 50%;
-    height: 40%;
-    margin-bottom: 2%;
-    margin-top: 10%;
+    width: 175px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
-input {
-    width: 80%;
-    margin-bottom: 2%;
-    padding: 2%;
-    font-size: 2em;
+#pokemon_name {
     text-align: center;
-    border: 1px solid black;
+    font-size: 24px;
 }
 
-.pokeball {
-    width: 50%;
-    padding-top: 20%;
+.stats {
+    text-align: justify;
+    font-size: 15px;
+    margin-left: 4vw;
+    margin-right: 4vw;
+}
 
+.pokemon_image {
+    width: 49vw;
 }
 
 .published {
-    font-size: .75em;
-    padding-bottom: 2%;
+    text-align: center;
+    font-size: 12px;
+    border-top: 1px solid;
+    width: 80%;
+    margin: auto;
+}
+
+/*Media Queries===============================================================*/
+@media (min-width: 414px) {
+    .static-character {
+        width: 200px;
+    }
+    .stats {
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .logo {
+        width: 50%;
+    }
+    .published {
+        width: 40%;
+    }
+    .pokemon_image {
+        width: 30vw;
+    }
+    .published {
+        width: 300px;
+    }
+}
+
+@media (min-width: 900px) {
+    .logo {
+        width: 300px;
+    }
+    .pokemon_image {
+        width: 215px;
+    }
 }
