@@ -7,10 +7,13 @@ $scope.toggle = function() {
 };
 
 //display Pokemon info
+$scope.num = '';
 $scope.displayPokemon = function(num) {
     Service.getPokemon($scope.num).then(function(response) {
         $scope.response = response;
+        $scope.num ='';
     });
 };
+
 
 });  // Closing controller tag.
